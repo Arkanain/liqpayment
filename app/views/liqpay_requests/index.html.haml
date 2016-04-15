@@ -1,0 +1,19 @@
+%p
+  Liqpay Requests
+
+%table
+  %th
+    %td
+      Description
+    %td
+      Amount
+
+- @liqpay_requests.each do |lr|
+  %tr
+    %td
+      = link_to lr.description, liqpay_request_path(lr)
+    %td
+      = lr.amount
+
+%p
+  = link_to 'Create New Liqpay Request', new_liqpay_request_path

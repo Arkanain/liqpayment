@@ -1,0 +1,2 @@
+module LiqpayRequestsHelper
+end
